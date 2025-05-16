@@ -1,0 +1,16 @@
+import Box from ".";
+import {ComponentStory} from "@storybook/react";
+
+export default {
+  title: 'Veew/Box',
+  component: Box,
+}
+
+const Template : ComponentStory<typeof Box> = (args) => <Box {...args} />;
+export const Primary = Template.bind({});
+Primary.args = {
+  children: "Hello World",
+  corner: "rounded",
+  background: "primary",
+  widthStyle: "full-width",
+}

@@ -1,0 +1,23 @@
+import {ComponentStory} from "@storybook/react";
+import Working from ".";
+export default {
+  title: 'Veew/Working',
+  component: Working,
+}
+
+const Template : ComponentStory<typeof Working> = (args) => <Working {...args} />;
+
+const Default = Template.bind({});
+
+const Small = Template.bind({});
+Small.args = {
+  small: true
+}
+
+const SmallWithText = Template.bind({});
+SmallWithText.args = {
+  small: true,
+  text: 'Saving...'
+}
+
+export {Default, Small, SmallWithText};

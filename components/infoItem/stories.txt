@@ -1,0 +1,15 @@
+import {ComponentStory} from "@storybook/react";
+import InfoItem from ".";
+
+export default {
+  title: 'Veew/InfoItem',
+  component: InfoItem,
+}
+
+const Template : ComponentStory<typeof InfoItem> = (args) =>  <InfoItem {...args} />;
+const Default = Template.bind({});
+Default.args = {
+  title: "Title",
+  description: "Here is a sample description"
+}
+export {Default}
